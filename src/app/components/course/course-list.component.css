@@ -1,0 +1,20 @@
+
+  .video-card {
+    margin: 10px;
+    height: 80vh;
+    width: 50vw;
+  }
+
+    .video-header-image {
+      background-size: cover;
+    }
+
+    .videos-grid {
+      padding-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 33%);
+      grid-auto-rows: auto;
+      place-content: center;
+
+      overflow-y: scroll;
+    }

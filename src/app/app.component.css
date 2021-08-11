@@ -1,0 +1,18 @@
+.img-fluid {
+  object-fit: contain;
+  height: 200;
+  width: 200;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.app-header {
+  background-color: transparent;
+  color: #5f6368;
+}
+
+.logo-padding {
+  padding: 8px;
+}
