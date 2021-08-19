@@ -1,0 +1,40 @@
+<p>add-course-form works!</p>
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Register</mat-card-title>
+    </mat-card-header>
+
+    <form class="example-form" (ngSubmit)="onAddCourse(addCourseForm)"   #addCourseForm="ngForm" >
+
+        <mat-card-content>
+          <div>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Course name" name="name" ngModel>
+          </mat-form-field>
+          </div>
+
+      <div>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Course Description"  name="description" ngModel>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Img URL"  name="image" ngModel>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Fees" type="number"  name="fees" ngModel>
+        </mat-form-field>
+      </div>
+
+      </mat-card-content>
+
+      <button type="submit" mat-stroked-button color="accent" class="btn-block">Create Course</button>
+
+    </form>
+  </mat-card>

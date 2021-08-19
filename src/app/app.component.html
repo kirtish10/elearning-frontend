@@ -1,10 +1,20 @@
 <!-- Toolbar -->
 <mat-toolbar color="primary" class="app-header">
-  <div><a href="https://www.positronx.io" target="_blank" class="positronx"><img class="logo-padding" height="40" src="../assets/images/teamwork.png"></a></div>
+  <div><a href="https://kirtish.me" target="_blank" class="positronx"><img class="logo-padding" height="40" src="../assets/images/teamwork.png"></a></div>
   <div class="spacer"></div>
   <span class="nav-tool-items">
-    <a mat-button routerLink="login" routerLinkActive="active">Log in</a>
-    <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
+<ul>
+    <li *ngIf="!isAuthenticated">
+      <a  mat-button routerLink="login" routerLinkActive="active">Log in</a>
+    </li>
+    <li  *ngIf="!isAuthenticated">
+      <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
+    </li>
+    <li *ngIf="!isAuthenticated">
+      <button (click)="LogOut()" mat-button mat-raised-button>Logout</button>
+    </li>
+  </ul>
+
   </span>
 </mat-toolbar>
 

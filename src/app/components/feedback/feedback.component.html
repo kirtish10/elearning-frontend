@@ -1,0 +1,10 @@
+<mat-grid-list cols="2" rowHeight="50px">
+  <mat-grid-tile *ngFor="let feed of feedback">
+    <mat-card class="my-card">
+      <mat-card-title>from + {{feed.name}}</mat-card-title>
+      <mat-card-content>
+         {{feed.feedback}}
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

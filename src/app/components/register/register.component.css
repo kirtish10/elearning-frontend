@@ -1,4 +1,14 @@
 .example-form {
-  height: 50vh;
-  width: 40vw;
+  height: 70vh;
+  width: 70vw;
+  align-items: center;
 }
+
+
+.example-full-width {
+  width: 80%;
+  align-items: center;
+
+}
+
+

@@ -10,6 +10,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CourseListComponent } from './components/course/course-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddCourseFormComponent } from './components/add-course-form/add-course-form.component';
+import { FeedbackComponent } from './components/feedback/feedback.component';
 
 
 
@@ -18,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     LogInComponent,
     RegisterComponent,
-    CourseListComponent
+    CourseListComponent,
+    AddCourseFormComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,

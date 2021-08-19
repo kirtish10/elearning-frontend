@@ -1,22 +1,20 @@
 
 
-<mat-grid-list cols="2">
-  <mat-grid-tile
-  *ngFor="let course of courses" class="video-grid">
-  <mat-card  class="video-card">
+
+<div class="mat-title">All courses ({{courses.length}})</div>
+<div class="container">
+<div class="row">
+  <mat-card *ngFor="let course of courses" class="col-lg-4 col-md-4 col-sm-1 m-2">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{course.c_name}}</mat-card-title>
       <mat-card-subtitle>{{course.c_desp}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="https://uploads-ssl.webflow.com/5f841209f4e71b2d70034471/6078b650748b8558d46ffb7f_Flutter%20app%20development.png" alt="Photo of a Shiba Inu">
+    <img class="img-fluid" height="300" src={{course.c_resource}} alt="Photo of a Shiba Inu">
     <mat-card-content>
       <p class="mat-title">
         Fees : {{course.c_fees}}
       </p>
-      <p>
-        content : {{course.c_resource}}
-      </p>
+
 
     </mat-card-content>
     <mat-card-actions>
@@ -24,8 +22,10 @@
       <button mat-button>DELETE</button>
     </mat-card-actions>
   </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
+
+</div>
+
+</div>
 
 
 
